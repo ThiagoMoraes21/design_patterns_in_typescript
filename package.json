@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "tsc",
     "watch": "tsc -w",
-    "start": "npx ts-node ./src/index.ts"
+    "start": "ts-node ./src/index.ts"
   },
   "repository": {
     "type": "git",
