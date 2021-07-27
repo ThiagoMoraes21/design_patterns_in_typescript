@@ -1,7 +1,7 @@
-import { BaseRecord } from "../interfaces/base-record";
-import { Database } from "../interfaces/database";
+import { BaseRecord } from "../../interfaces/base-record";
+import { Database } from "../../interfaces/database";
 
-export function createDatabase<T extends BaseRecord>() {
+export function createDatabase_factory<T extends BaseRecord>() {
     class InMemoryDatabase implements Database<T> {
         private db: Record<string, T> = {};
     
